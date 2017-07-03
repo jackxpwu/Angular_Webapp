@@ -1,0 +1,37 @@
+.essay{
+	background-color: @bgColor;
+	.mt(40);
+	&>p{
+		text-align: center;
+		margin: 0;
+		.pt(5);
+		.pb(5);
+	}
+	.item{
+		padding:10px 20px;
+		background-color: @defaultColor;
+		.mb(20);
+		.title{
+			color:@fontColor;
+			text-decoration: none;
+			margin: 0;
+
+			a{
+				font-weight: 600;
+				.pb(5);
+				border-bottom: 1px solid @iconBarColor;
+			}
+		}
+		.writer{
+			color:rgba(0,0,0,.6);
+		}
+		.img{
+			width: 100%;
+		}
+		.abstract{
+			color:rgba(0,0,0,.6);
+			.fs(14);
+			.lh(25);
+		}
+	}
+}

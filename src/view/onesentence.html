@@ -1,0 +1,33 @@
+<div app-head></div>
+<div class="one-inner">
+	<div class="item">
+		<div class="img-container">
+			<a class="" href="">
+				<img ng-src="{{items[i].imgUrl}}" alt="图片1">
+			</a>
+			<span class="left" ng-click="prev()">&lt;</span>
+			<span class="right" ng-click="next()">&gt;</span>
+		</div>
+		<div class="type" ng-bind="items[i].type"></div>
+		<div class="content">
+			<div class="part1">
+				<p class="date" ng-bind="date"></p>
+				<p class="year" ng-bind="year+'.'+month"></p>
+			</div>
+			<div class="part2">
+				<p ng-bind="items[i].sentence">
+				</p>
+			</div>
+			<!-- <div class="clearboth"></div> -->
+		</div>
+		<ol class="carousel-indicators">
+			<li ng-class="index=='0' ? 'active':''"></li>
+			<li ng-class="index=='1' ? 'active':''"></li>
+			<li ng-class="index=='2' ? 'active':''"></li>
+			<li ng-class="index=='3' ? 'active':''"></li>
+			<li ng-class="index=='4' ? 'active':''"></li>
+			<li ng-class="index=='5' ? 'active':''"></li>
+			<li ng-class="index=='6' ? 'active':''"></li>
+		</ol>
+	</div>
+</div>

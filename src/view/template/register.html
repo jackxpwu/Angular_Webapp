@@ -1,0 +1,10 @@
+<div class="register">
+	<h3 ng-bind="toLogin?'立即登录':'立即注册'"></h3>
+	<p>探索全新的Eden世界</p>
+	<form action="">
+		<input type="text" value="邮箱">
+		<input type="text" value="密码">
+		<button ng-bind="toLogin?'立即登录':'立即注册'"></button>
+	</form>
+	<p class="login">或<span ng-click="isToLogin()" ng-bind="toLogin?'注册':'登录'">登录</span></p>
+</div>

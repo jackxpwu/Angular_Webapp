@@ -1,0 +1,41 @@
+
+.main1{
+	width:100%;
+	.mt(40);
+}
+.introduce{
+	text-align: center;
+	color: @mainFontColor;
+	.pl(40);
+	.pr(40);
+
+	.spe{
+		border-top: 1px solid @lineColor;
+		.pt(5);
+	}
+	.sect-first{
+		h3{
+			font-weight: 600;
+		};
+	}
+
+	.highlights{
+		.ml(40);
+		.mr(40);
+		.point{
+			h2{
+				.fs(18);
+				font-weight: normal;
+				color: @headFontColor;
+			};
+			p{
+				color:#7f8c8d;
+			};
+			&:before{
+				content:"—";
+				.fs(40);
+				color:@headFontColor;
+			};
+		}
+	}
+}

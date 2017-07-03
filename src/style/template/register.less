@@ -1,0 +1,44 @@
+.register{
+	background-color: @headFontColor;
+	opacity: 0.8;
+	text-align: center;
+	padding:0 1rem 0.03rem 1rem;
+	h3{
+		margin:0;
+		.pt(20);
+	}
+	p{
+		margin-top: 5px;
+	}
+	form{
+		width: 100%;
+	}
+	input,button{
+		box-sizing: border-box;
+		display: block;
+		margin-left:auto;
+		margin-right: auto;
+		width: 90%;
+		.mb(10);
+		outline: none;
+		border:1px solid @lineColor;
+		padding:10px 5px 10px;
+		color:@mainFontColor;
+	}
+	button{
+		box-sizing: border-box;
+		border-color:@defaultColor;
+		background-color: @headFontColor;
+		border-radius: 3px;
+		color:@defaultColor;
+	}
+	.login{
+		.fs(15);
+		color:@mainFontColor;
+		margin: 0;
+		span{
+			display: inline-block;
+			padding:5px 15px 15px 5px;
+		}
+	}
+}

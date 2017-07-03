@@ -1,0 +1,13 @@
+<div app-head></div>
+
+<div class="essay">
+	<p>- ESSAY -</p>
+	<div class="item" ng-repeat="essay in essays">
+		<h2 class="title" ui-sref="essayDetail({id:essay.id})"><a ng-bind="essay.title"></a></h2>
+		<p class="writer" ng-bind="essay.writer"></p>
+		<img class="img" ng-src="{{essay.imgUrl}}" alt="图片">
+		<p class="abstract" ng-bind="essay.abstract">
+		</p>
+		<p class="date" ng-bind="essay.date"></p>
+	</div>
+</div>
